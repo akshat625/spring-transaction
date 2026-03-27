@@ -22,7 +22,7 @@ This project demonstrates all Spring transaction propagation modes with simple `
 - `GET /mandatory`
 - `GET /never`
 - `GET /nested`
-- `GET /accounts`
+
 
 ## Expected Highlights
 - `REQUIRED`: outer + inner roll back together on exception.
