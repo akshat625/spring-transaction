@@ -8,15 +8,6 @@ This project demonstrates all Spring transaction propagation modes with simple `
 - MySQL
 - Lombok
 
-## Configuration
-Main config is in `src/main/resources/application.yaml` and defaults to:
-- Host: `localhost:3306`
-- DB: `spring_transaction`
-- User: `root`
-- Password: `root`
-
-You can override with environment variables:
-- `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USERNAME`, `DB_PASSWORD`
 
 ## Run
 ```bash
@@ -24,14 +15,14 @@ You can override with environment variables:
 ```
 
 ## Endpoints
-- `GET /test/required`
-- `GET /test/requires-new`
-- `GET /test/supports`
-- `GET /test/not-supported`
-- `GET /test/mandatory`
-- `GET /test/never`
-- `GET /test/nested`
-- `GET /test/accounts`
+- `GET /required`
+- `GET /requires-new`
+- `GET /supports`
+- `GET /not-supported`
+- `GET /mandatory`
+- `GET /never`
+- `GET /nested`
+- `GET /accounts`
 
 ## Expected Highlights
 - `REQUIRED`: outer + inner roll back together on exception.
